@@ -11,7 +11,7 @@ import { toast } from "sonner";
 import { useSalon, useSalonData } from "@/hooks/use-salon";
 import { updateSalon } from "@/lib/salon.functions";
 import { weekdayNames } from "@/lib/salon-data";
-import logo from "@/assets/agenbella-logo.png.asset.json";
+import logo from "@/assets/agenfloow-logo.png";
 
 export const Route = createFileRoute("/_authenticated/configuracoes")({
   head: () => ({
@@ -101,7 +101,7 @@ function Configuracoes() {
           <section className="rounded-2xl border border-border bg-card p-6 shadow-soft">
             <h2 className="text-lg">Identidade visual</h2>
             <div className="mt-4 flex flex-wrap items-center gap-4">
-              <img src={salon?.logo_url ?? logo.url} alt="Logo do salão" className="size-16 rounded-xl border border-border object-cover object-top" />
+              <img src={salon?.logo_url ?? logo} alt="Logo do salão" className="size-16 rounded-xl border border-border object-cover object-top" />
             </div>
             <p className="mt-5 text-sm font-medium">Cor da marca</p>
             <div className="mt-2 flex flex-wrap gap-2">

@@ -6,7 +6,7 @@ import {
   BarChart3, Globe, QrCode, Settings, Menu, LogOut, CreditCard, Bell, UserRound, Sparkles,
 } from "lucide-react";
 import { useState, type ReactNode } from "react";
-import logo from "@/assets/agenbella-logo.png.asset.json";
+import logo from "@/assets/agenfloow-logo.png";
 import { useSalon } from "@/hooks/use-salon";
 import { useAccess, useNotifications } from "@/hooks/use-access";
 import { markAllNotificationsRead } from "@/lib/notifications.functions";
@@ -145,7 +145,7 @@ function SidebarInner({ onNavigate }: { onNavigate?: () => void }) {
   return (
     <div className="flex h-full flex-col bg-sidebar py-5">
       <Link to="/" className="mb-6 flex items-center gap-3 px-6" onClick={onNavigate}>
-        <img src={logo.url} alt="AgenFloow" className="h-10 w-10 rounded-lg bg-white object-cover object-top" />
+        <img src={logo} alt="AgenFloow" className="h-10 w-10 rounded-lg bg-white object-cover object-top" />
         <div className="min-w-0">
           <p className="font-display text-lg leading-none text-sidebar-foreground">AgenFloow</p>
           <p className="truncate text-[11px] tracking-wide text-sidebar-foreground/55">{salon?.name ?? "Seu salão"}</p>

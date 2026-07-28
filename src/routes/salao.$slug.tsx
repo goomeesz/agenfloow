@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import logo from "@/assets/agenbella-logo.png.asset.json";
+import logo from "@/assets/agenfloow-logo.png";
 import { brl, isoDate, prettyDate, weekdayNames } from "@/lib/salon-data";
 import { createPublicBooking, getPublicSalon, getPublicSlots } from "@/lib/public-booking.functions";
 
@@ -158,7 +158,7 @@ function PublicBooking() {
     <div className="min-h-screen bg-soft-gradient pb-16">
       <header className="bg-brand-gradient px-4 pt-10 pb-14 text-primary-foreground sm:px-6">
         <div className="mx-auto max-w-2xl">
-          <img src={salon.logo_url ?? logo.url} alt={salon.name} className="size-16 rounded-2xl bg-white object-cover object-top" />
+          <img src={salon.logo_url ?? logo} alt={salon.name} className="size-16 rounded-2xl bg-white object-cover object-top" />
           <h1 className="mt-4 text-3xl text-primary-foreground">{salon.name}</h1>
           <p className="mt-1 text-sm text-primary-foreground/85">{salon.business_type ?? "Beleza & estética"}</p>
           <ul className="mt-4 grid gap-1.5 text-sm text-primary-foreground/85">

@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable/index";
-import logo from "@/assets/agenbella-logo.png.asset.json";
+import logo from "@/assets/agenfloow-logo.png";
 
 export const Route = createFileRoute("/auth")({
   head: () => ({
@@ -86,7 +86,7 @@ function AuthPage() {
     <div className="grid min-h-screen place-items-center bg-soft-gradient px-4 py-10">
       <div className="w-full max-w-md">
         <Link to="/" className="mx-auto flex w-fit items-center gap-2">
-          <img src={logo.url} alt="AgenFloow" className="h-10 w-10 rounded-lg object-cover object-top" />
+          <img src={logo} alt="AgenFloow" className="h-10 w-10 rounded-lg object-cover object-top" />
           <span className="font-display text-xl">AgenFloow</span>
         </Link>
 

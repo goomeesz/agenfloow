@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   CalendarDays, QrCode, BarChart3, Users, Clock, Sparkles, Check, ArrowRight,
 } from "lucide-react";
-import logo from "@/assets/agenbella-logo.png.asset.json";
+import logo from "@/assets/agenfloow-logo.png";
 import hero from "@/assets/hero-salon.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -48,7 +48,7 @@ function Index() {
     <div className="min-h-screen bg-soft-gradient">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
         <div className="flex min-w-0 items-center gap-2">
-          <img src={logo.url} alt="AgenFloow" className="h-10 w-10 shrink-0 rounded-lg object-cover object-top" />
+          <img src={logo} alt="AgenFloow" className="h-10 w-10 shrink-0 rounded-lg object-cover object-top" />
           <span className="font-display text-xl">AgenFloow</span>
         </div>
         <div className="flex shrink-0 items-center gap-2">

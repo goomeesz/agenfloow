@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import logo from "@/assets/agenbella-logo.png.asset.json";
+import logo from "@/assets/agenfloow-logo.png";
 import { toast } from "sonner";
 import { useServerFn } from "@tanstack/react-start";
 import { useQueryClient } from "@tanstack/react-query";
@@ -72,7 +72,7 @@ function Onboarding() {
     <div className="min-h-screen bg-soft-gradient px-4 py-8 sm:px-6">
       <div className="mx-auto max-w-2xl">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo.url} alt="AgenFloow" className="h-9 w-9 rounded-lg object-cover object-top" />
+          <img src={logo} alt="AgenFloow" className="h-9 w-9 rounded-lg object-cover object-top" />
           <span className="font-display text-lg">AgenFloow</span>
         </Link>
 
